@@ -1,12 +1,19 @@
-'use client';
+"use client";
 import NavBar from "@/components/atom/NavBar";
-import Card from "@/components/section/Card";
 import HeadLine from "@/components/section/HeadLine";
+import ProductList from "@/components/section/ProductsList";
+import { categories } from "@/public/data/MenuData";
+
 export default function page() {
-  return <>
-    <NavBar/>
-    <HeadLine title="Deserts"/>
-    <Card/>
-    
-  </>;
+  return (
+    <>
+      <NavBar />
+      {categories?.map((category) => (
+        <div>
+          <HeadLine title={category?.name} />
+          <ProductList category={category} />
+        </div>
+      ))}
+    </>
+  );
 }
