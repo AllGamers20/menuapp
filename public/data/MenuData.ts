@@ -1,3 +1,43 @@
+// export const categories = {
+//   Deserts: [
+//     {
+//       name: "Strawbarry cack",
+//       price: 40,
+//     },
+//     {
+//       name: "Choclete cack",
+//       price: 40,
+//     },
+//   ],
+//   Drinks: [
+//     { name: "Milk shak", price: 60 },
+//     { name: "Hot shak", price: 40 },
+//   ],
+// };
+export const categories = [
+  {
+    name: "Deserts",
+    products: [
+      { name: "Milk shak", price: 60 },
+      { name: "Hot shak", price: 40 },
+      { name: "Choclete shak", price: 40 },
+    ],
+  },
+  {
+    name: "Drinks",
+    products: [
+      {
+        name: "Strawbarry cack",
+        price: 40,
+      },
+      {
+        name: "Choclete cack",
+        price: 40,
+      },
+    ],
+  },
+];
+
 export const menu = [
   {
     categories: [
