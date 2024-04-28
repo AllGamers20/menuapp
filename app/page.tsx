@@ -9,7 +9,7 @@ export default function page() {
     <>
       <NavBar />
       {categories?.map((category) => (
-        <div>
+        <div key={category?.name}>
           <HeadLine title={category?.name} />
           <ProductList category={category} />
         </div>
